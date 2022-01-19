@@ -48,3 +48,5 @@ if fries == ("yes"):
 if fries == ("no"):
   print("You choose no fries")
 print("cost:",cost)
+
+ketchup_packets = input("How many packets of ketchup would you like?   ")
