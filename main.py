@@ -10,20 +10,41 @@ if sandwich == "chicken":
 if sandwich == "tofu":
   print("You picked tofu")
   cost = cost+5.75
+#print("cost:",cost)
 
 drink = input("Would you like a drink?   ")
 if drink == ("yes"):
-  beverage= input("Pick a Beverage, large ($2.25), medium ($1.75), small ($1.00)   ")
-  if beverage == "large":
+  drink_size= input("Pick a Beverage Size, large ($2.25), medium ($1.75), or small ($1.00)   ")
+  if drink_size == "large":
     print("You picked large")
     cost= cost+2.25
-  if beverage == "medium":
+  if drink_size == "medium":
     print("You picked medium")
     cost= cost+1.75
-  if beverage == "small":
+  if drink_size == "small":
     print("You picked small")
     cost= cost+1.00
 if drink ==("no"):
   print("You choose no drink")
-print (cost)
+#print("cost:",cost)
 
+fries = input("Would you like fries?   ")
+if fries == ("yes"):
+  fry_size =input("Pick a size of fry, large ($2.00), medium ($1.50), or small($1.00)   ") 
+  if fry_size == "large":
+    print ("You picked large")
+    cost=cost+2.00
+  if fry_size == "medium":
+    print ("You picked medium")
+    cost=cost+1.50
+  if fry_size == "small":
+    megasize= input("Would you like to megasize your fries?  ")
+    if megasize == ("yes"):
+      print("You megasized!")
+      cost=cost+2.00
+    if megasize == ("no"):
+      print ("You picked small")
+      cost=cost+1.00
+if fries == ("no"):
+  print("You choose no fries")
+print("cost:",cost)
