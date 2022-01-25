@@ -1,4 +1,5 @@
 cost=0
+discount=0
 
 sandwich= input("Pick a Sandwich, beef ($6.25), chicken (5.25$) , or tofu ($5.75)   ")
 if sandwich == "beef":
@@ -49,4 +50,5 @@ if fries == ("no"):
   print("You choose no fries")
 print("cost:",cost)
 
-ketchup_packets = input("How many packets of ketchup would you like?   ")
+ketchup_packets = int(input("How many packets of ketchup would you like?   "))
+cost=cost+((ketchup_packets)*(.25))
